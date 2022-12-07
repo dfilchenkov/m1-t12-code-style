@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class DepositCalculator {
 
-    double calculateComplexPercent(double amount, double yearRate , int period) {
+    double calculateComplexPercent(double amount, double yearRate, int period) {
         double pay = amount * Math.pow((1 + yearRate / 12), 12 * period);
         return calculateRound(pay, 2);
     }
